@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-color: pink;
+}
+header, nav, .left-panel, .right-panel, main, footer {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+nav {
+    background-color:palevioletred;
+    margin-top: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.left-panel {
+    float: left;
+    width: 30%;
+    height: 200px;
+}
+
+.right-panel {
+    float: right;
+    width: 15%;
+    height: 400px;
+    background-color: plum;
+}
+
+
+
+main {
+    float: left;
+    width: 60%;
+    position: relative;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+    background-color:palevioletred;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
