@@ -31,6 +31,7 @@ nav ul li {
     float: left;
     width: 30%;
     height: 200px;
+    background-color:darksalmon;
 }
 
 .right-panel {
@@ -46,10 +47,12 @@ main {
     float: left;
     width: 60%;
     position: relative;
+    background-color:lightcoral;
 }
 
 section {
     margin-bottom: 20px;
+    background-color:rgb(231, 128, 179);
 }
 
 footer {
