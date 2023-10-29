@@ -1,0 +1,19 @@
+nav a {
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px outset lightblue;
+}
+
+nav a.current {
+    background-color: rgb(4, 174, 221);
+}
+
+nav a:hover {
+    background-color: rgb(29, 174, 219);
+}
+
+nav a:active {
+    border-style: inset;
+}

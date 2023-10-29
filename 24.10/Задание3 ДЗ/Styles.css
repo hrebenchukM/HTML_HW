@@ -1,0 +1,45 @@
+nav a {
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px outset lightblue;
+}
+
+nav a.current {
+    background-color: rgb(4, 174, 221);
+}
+
+nav a:hover {
+    background-color: rgb(29, 174, 219);
+}
+
+nav a:active {
+    border-style: inset;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div, img, iframe {
+    border: 1px solid #333;
+}
+
+h1 {
+    text-align: center;
+    background-color: #fff3f3;
+    color: rgb(14, 13, 13);
+    padding: 10px;
+    margin: 0;
+}
+
+iframe {
+    width: 256px;
+    height: 256px;
+}
+
+a {
+    text-decoration: none;
+}
