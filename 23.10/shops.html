@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазины строительной фирмы "ДОМ"</title>
+    <style>
+         #main-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .shop {
+            font-weight: bold;
+        }
+
+        .lenin-district .shop {
+            color: green;
+        }
+
+        .october-district .shop {
+            color: blue;
+        }
+
+        .soviet-district .shop {
+            color: red;
+        }
+
+        .address {
+            margin-left: 20px;
+        }
+
+        .lenin-district ul li {
+            list-style-type:square;
+        }
+
+        .october-district ul li {
+         
+            list-style-type: disc;
+        }
+
+        .soviet-district ul li {
+            list-style-type: circle;
+        }
+
+        .address:hover {
+            background-color: #f5f5f5;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+       <h2> Список магазинов строительной фирмы "Дом"</h2>
+       <li style="text-align: center;font-family:cursive;">Ленинский район</li>
+       <hr>
+       <li style="text-align: center;font-family:cursive;">Октябрьский район</li>
+       <hr>
+       <li style="text-align: center;font-family:cursive;">Советский район</li>
+       <hr>
+
+    <ol>
+        <div class="lenin-district">
+
+            <div class="shop">
+                <li>Ленинский район</li>
+            </div>
+            <ul>
+                <li>
+                    <div class="address">Магазин "Стройка", ул. Астрахановская, д.17</div>
+                </li>
+                <li>
+                    <div class="address">Торговый комплекс "Твой дом", ул. Московская, д.47</div>
+                </li>
+                <li>
+                    <div class="address">Магазин "Стройматериалы", ул. Волгоградская, д.1</div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="october-district">
+
+            <div class="shop">
+                <li>Октябрьский район</li>
+            </div>
+            <ul>
+                <li>
+                    <div class="address">Универмаг "Меркурий", отдел "твой дом" ул. Пушкинская, д.55</div>
+                </li>
+                <li>
+                    <div class="address">Магазин "Суперстрой", ул. Королева, д.12</div>
+                </li>
+                <li>
+                    <div class="address">Магазин "Стройка", ул. Майская, д.66</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="soviet-district">
+            <div class="shop">
+                <li>Советский район</li>
+            </div>
+            <ul>
+                <li>
+                    <div class="address">Магазин "Мебель", пр-т. Карла Маркса, д.56</div>
+                </li>
+                <li>
+                    <div class="address">Магазин "ДОМ", ул. Октябрская, д.77</div>
+                </li>
+                <li>
+                    <div class="address">Магазин "Стройматериалы", ул. Белгородская, д.2</div>
+                </li>
+            </ul>
+        </div>
+    </ol>
+    </div>
+</body>
+
+</html>
