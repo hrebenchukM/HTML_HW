@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Boards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #008b8b;
+        }
+
+        header {
+            color: white;
+            background-color: #008b8b;
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .boards-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin-top: 60px;
+        }
+
+        .board {
+            background-color: #c4d1ce;
+            color: rgb(7, 7, 7);
+            margin: 10px;
+            padding: 15px;
+            min-width: 300px;
+            max-width: 400px;
+            overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
+            max-height: 80vh;
+            
+        }
+
+        .task {
+            background-color: #eff6fe;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .task p {
+            margin: 0;
+           max-height: 60px;  
+             overflow-y: auto;
+        }
+
+        .task img {
+            margin-right: 5px;
+        }
+
+        .task .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task .actions span {
+            font-size: 0.8em;
+        }
+
+        .task .actions img {
+            width: 18px;
+            height: 18px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        MY BOARDS
+    </header>
+    <div class="boards-container">
+        <div class="board">
+            <h2>To Do</h2>
+            <div class="task">
+                <p>  Lorem ipsum dolor sit amet.</p>
+    
+                 <div class="actions">
+                    
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_1.png" alt="avatar icon">
+                </div>
+                
+            </div>
+            <div class="task">
+                <p>In aliquam sem quis mi ultrices.</p>
+                
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Vivamus ac velit scelerisque.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+          </div>
+        <div class="board">
+            <h2>In Progress</h2>
+            <div class="task">
+                <p>Aliquam in massa vitae.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Donec quis dolor id elit.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Integer vel dolor non arcu.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Curabitur volutpat justo.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Proin mollis purus a congue .</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Nullam sit amet lorem .</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+                
+            </div>
+            <div class="task">
+                <p>Vestibulum sed nunc sit amet.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Sed sed felis eget nisi laoreet.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+          </div>
+        <div class="board">
+            <h2>Test</h2>
+            <div class="task">
+                <p>Phasellus varius leo tincidunt.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_3.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Nullam quis augue non purus.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Duis accumsan enim in lobortis.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h2>Fix</h2>
+            <div class="task">
+                <p>Donec a sem sed metus porta.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_1.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Vivamus sit amet massa sed.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div> <div class="task">
+                <p> Pretium augue eu, mollis eros.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>   </div>
+        <div class="board">
+            <h2>Done</h2>
+            <div class="task">
+                <p>Elementum ipsum id.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Ut commodo tortor.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            <div class="task">
+                <p>Duis sit amet diam non nulla.</p>
+                <div class="actions">
+                    <img src="justify_26.png" alt="justify icon">
+                    <img src="checkbox_26.png" alt="checkbox icon">
+                    <span>4/8</span>
+                    <img src="attach_26.png" alt="attach icon">
+                    <span>2</span>
+                    <img src="comments_26.png" alt="comments icon">
+                    <span>4</span>
+                    <img src="avatar_2.png" alt="avatar icon">
+                </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
