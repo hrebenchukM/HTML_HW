@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d6a4a4;
+        }
+
+        @keyframes loader {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loader {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            animation: loader 2s infinite linear;
+            filter: drop-shadow(0 0 10px rgba(219, 57, 79, 0.8));
+        }
+
+        .loader span {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: center;
+            animation: span-animation 2s linear infinite; 
+            opacity: 1;
+        }
+
+        .loader span:before {
+            content: '\2665';
+            font-size: 48px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(219, 57, 79);
+            transition: color 0.5s ease;
+        }
+
+        .loader:hover span:before {
+            color: #3498db;
+        }
+
+        @keyframes span-animation {
+            0%, 100% {
+                transform: rotate(0deg) scale(1) translateY(0);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.2) translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+
+</html>
