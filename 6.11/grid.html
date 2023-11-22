@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Layout</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas: 
+                'a1 a1 a1'
+                'a2 a3 a4'
+                'a2 a5 a5';
+            grid-gap: 23px;
+            padding: 20px;
+            border-radius: 6px;
+            background-color: #0a0e0c; 
+            font-family: 'Arial', sans-serif; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid div {
+            display: flex;
+            align-items: center;
+            padding: 1em; 
+            border-radius: 10px; 
+            color: #fff;
+            font-size: 120%; 
+            background-color: #5ea4f4; 
+            font-weight: 100;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 5px;
+        }
+
+        .grid div:hover {
+            background-color: #6fa1f4;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .it1 {
+            display: flex;
+            grid-area: a1;
+            padding: 40px; 
+            background-color: #f18973; 
+            border-radius: 20px;
+        }
+
+        .it2 {
+            grid-area: a2;
+            background-color: #8e8d8a;
+            border-radius: 20px;
+        }
+
+        .it3 {
+            grid-area: a3;
+            background-color: #b83b5e; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .it4 {
+            grid-area: a4;
+            background-color: #50514f;
+            border-radius: 20px;
+        }
+
+        .it5 {
+            text-align: center;
+            flex-direction: column;
+            grid-area: a5;
+            background-color: #003049; 
+            border-radius: 20px;
+        }
+
+        .list1 ul li,
+        .list2 ul li {
+            list-style: none;
+            margin-top: 1em; 
+            color: #100c0c;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        h4 {
+            color: #1a1a1a; 
+        }
+
+        footer {
+            margin-top: 1em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="it1">
+            <div>
+                <p>Що таке Леонардо Дайвінчик?</p>
+            </div>
+        </div>
+        <div class="it2">
+            <div class="list1">
+                <ul>
+                    <li>Леонардо Дайвінчик</li>
+                    <li><img src="avatar128.webp" alt="Леонардо Дайвинчик"></li>
+                    <li>Бот знайомств 👉 @leomatchbot </li>
+                    <li>Реклама у Дайвінчику 👉 @futuread</li>
+                    <li>Leo: Meet, chat & find new friends!
+                        Help 👉 @leomatchbot_help
+                        Buy ads 👉 @ADinsidebot
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="it3">
+            <div>
+                <h4>/start</h4>
+            </div>
+            <div>
+                <ul>
+                    <li>Обери мову 👇</li>
+                    <li>Скільки тобі років?</li>
+                    <li>Тепер оберемо стать</li>
+                    <li>Хто тебе цікавить?</li>
+                    <li>З якого ти міста?</li>
+                    <li>Як до тебе звертатись?</li>
+                    <li>Розкажи про себе, кого хочеш знайти, чим пропонуєш зайнятись. Це допоможе краще підібрати тобі компанію.</li>
+                    <li>Тепер надішли фото чи запиши відео 👍 (до 15 сек), його побачать інші користувачі</li>
+                </ul>
+            </div>
+        </div>
+        <div class="it4">
+            <div class="list2">
+                <ul>
+                    <li><img src="1f4a4.png" alt="Леонардо Дайвинчик"></li>
+                    <li>  1. Дивитися анкети.</li>
+                    <li>2. Моя анкета.</li>
+                    <li>3. Я більше не хочу нікого шукати.</li>
+                    <li>***
+                        4. Запроси друзів – отримай більше лайків 😎</li>
+                </ul>
+            </div>
+        </div>
+        <div class="it5">
+            <footer>
+                <p>https://t.me/leomatchbot</p>       
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
