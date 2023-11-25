@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+    <style>
+         body {
+            background-color: #215f63;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post">
+            <div>
+                <h1>Registration</h1>
+                <label for="login">Login: </label>
+                <input type="text" id="login" placeholder="Login" maxlength="10" />
+            </div>
+            <div>
+                <label>Email:
+                    <input type="email" name="email" />
+                </label>
+            </div>
+            <label>Date: <input type="date" /></label>
+            <div>
+                <label>Gender:</label>
+                <hr>
+                <label>Male<input type="radio" name="gender" value="male" checked /></label>
+                <hr>
+                <label>Female<input type="radio" name="gender" value="female" /></label>
+            </div>
+
+            <hr>
+
+            <div>
+                <label>Country: <select name="Country" size="1">
+                        <option value='hu'>Hungary</option>
+                        <option value='ua'>Ukraine</option>
+                        <option value='pl'>Poland</option>
+                        <option value='it'>Italy</option>
+                    </select>
+                </label>
+            </div>
+
+            <div>
+                <label>Type of hero: <select name="Type of hero" size="1">
+                        <option value='wr'>Warrior</option>
+                        <option value='sr'>Sorcerer</option>
+                        <option value='wt'>Witch</option>
+                        <option value='ps'>Priest</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label>Experience: <input type="number" value="10" min="1" max="99"></label>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style> 
+    body {
+    background: url('https://images.immediate.co.uk/production/volatile/sites/2/2016/05/22984.jpg?resize=1920,1080') no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <form method="post">
+        <div>
+            <h1>Making an order</h1>
+        </div>
+        <div>
+            <label for="name">Имя:</label> <br>
+            <input type="text" name="name" id="inp" maxlength="10"/>
+        </div>
+        <div>
+            <label for="adress">Aдрес:</label> <br>
+            <input type="text" name="adress" id="inp" maxlength="15"/>
+        </div>
+        <div>
+            <label for="phone">Телефон:</label> <br>
+            <input type="text" name="phone" id="inp" maxlength="12"/>
+        </div>
+       
+        <div>
+            <label>Email:
+                <input type="email" name="email" />
+            </label>
+        </div>
+        <div> 
+            <label>Count of chopsticks:</label> <br> 
+            <input type="number" value="10" min="1" max="10"/>
+        </div>
+        <div>
+            Type of chopsticks:
+            <hr>
+            <label>Educational
+                <input type="radio" name="gender" value="male" checked />
+            </label>
+            <hr>
+            <label>Ordinary
+                <input type="radio" name="gender" value="female" />
+            </label>
+            <hr>
+        </div>
+        <div>
+            <label>Your sushi: <select name="Sushi" size="1">
+                    <option value='hu'>Maki</option>
+                    <option value='ua'>Hosomaki</option>
+                    <option value='pl'>Tempura roll</option>
+                    <option value='it'>SET(all included)</option>
+                </select>
+            </label>
+        </div>
+
+       
+        <div>
+            <label> Do you need napkins?
+                <hr>
+                <input type="checkbox" name="news" checked value="true" />
+               Yes
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="news1" value="false" />
+             No
+            </label>
+            <hr>
+        </div>
+
+  <div>
+    Comment: 
+            <textarea name="comment" minlength="2" maxlength="1024"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Отправить" />
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
