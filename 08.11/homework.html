@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Website</title>
+    <style>
+        body {
+            font-family: "Helvetica", Arial, sans-serif;
+            background-color: #f7d4d4;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            margin: 20px auto;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+        }
+
+        .site-logo {
+            border: 2px solid #222;
+            margin-bottom: 1ex;
+            width: 170px;
+        }
+
+        .navigation-bar {
+            border: 2px solid #222;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 8px;
+            padding: 0.5em;
+        }
+
+        main {
+            border: 2px solid #222;
+            display: flex;
+            margin-top: 1vh;
+            border-radius: 8px;
+        }
+
+        .main-content {
+            border: 2px solid #222;
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+
+        .side-panel {
+            flex-basis: 150vw;
+            height: 23vh;
+            margin-top: 0%;
+            margin-left: 1vw;
+        }
+
+        #shape-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-basis: 150vw;
+            height: 20vh;
+            border: 2px solid #222;
+            padding: 1%;
+        }
+
+        #shape-container div {
+            background-color: #666;
+            width: 15%;
+            height: 10vh;
+            margin: 1%;
+        }
+
+        #search-input {
+            display: none;
+        }
+
+        .text-placeholder {
+            border: 2px solid #222;
+            background-color: #666;
+            padding: 0.5em;
+            margin-top: 1vh;
+            border-radius: 8px;
+            height: 100px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #search-input {
+                display: block;
+            }
+
+            #alternative-input {
+                display: none;
+            }
+
+            .site-logo {
+                width: 120px;
+            }
+
+            #shape-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .site-logo {
+                padding: 0px;
+                width: 120px;
+            }
+
+            main {
+                padding: 0%;
+                flex-direction: column;
+                border: none;
+            }
+
+            .additional-list {
+                display: none;
+            }
+
+            #shape-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <div>
+            <div class="site-logo">Logo</div>
+        </div>
+        <header>
+            <div class="navigation-bar">
+                <ul>
+                    <li style="color: #222;">HOME</li>
+                    <li style="color: #222;">ABOUT</li>
+                    <li style="color: #222;">GALLERY</li>
+                    <li style="color: #222;">CONTACT</li>
+                </ul>
+                <div class="search-form">
+                    <form>
+                        <input type="text" id="input2" placeholder="Search"></input>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <div>Lorem ipsum dolor.</div>
+                <div class="text-placeholder">
+                    
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ex tellus. Nullam vehicula feugiat
+                    neque at aliquet. Ut tortor nunc, finibus condimentum eros vitae, fringilla auctor nibh. In
+                    pellentesque urna ac ex dapibus, sit amet fermentum leo laoreet. Integer sit amet scelerisque nunc.
+                    Donec sit amet auctor enim, eu aliquet tellus. Sed diam ligula, ullamcorper in tortor volutpat,
+                    tristique feugiat velit. Phasellus pulvinar nisl dignissim condimentum hendrerit. Morbi et urna
+                    augue. Vestibulum nulla est, iaculis in ullamcorper eu, varius at augue. Quisque non tellus risus.
+                    Ut commodo vehicula dui rutrum tempus. Nullam fermentum sollicitudin justo quis maximus. Mauris
+                    eget viverra dolor. Curabitur sed ullamcorper sapien.
+                </div>
+            </div>
+            <div class="side-panel">
+                <div class="additional-list">
+                    <ul>
+                        <div><b>List</b></div>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                        <li>item 4</li>
+                        <li>item 5</li>
+                    </ul>
+                </div>
+                <div id="shape-container">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
