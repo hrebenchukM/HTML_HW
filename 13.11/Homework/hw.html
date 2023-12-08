@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объявления</title>
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 60px; 
+        }
+       
+        
+
+        h4 {
+            color: #000;
+            text-align: center;
+        }
+
+        .list-group-item {
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            border: none;
+        }
+
+        .list-group-item:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .list-group-item a {
+            color: #000;
+            text-decoration: none;
+        }
+
+      
+        
+      
+    </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="ad.png" alt="Логотип" width="30" height="30" class="d-inline-block align-top">
+               AD'S BOARD
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            &#43;New ad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My profile</a>
+                        <img src="av_64.png"
+                        width="40">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container mt-5">
+        <div class="row">
+           
+            <div class="col-md-6">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Текст для поиска" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Местоположение" aria-label="Location">
+                    <button class="btn btn-primary" type="submit">Поиск</button>
+                </form>
+            </div>
+          
+            <div class="col-md-6">
+                <h4>Категории</h4>
+                <ul class="list-group">
+                    <div class="row">
+                        <div class="col">
+                    <img src="photo_2023-12-08_05-44-44.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Clidren's world</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-51-06.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Property</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-53-27.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Transport</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-58-06.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Spare parts for cars</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-50-36.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Exchange</a></li>
+                </div>
+                </ul>
+
+
+                <ul class="list-group">
+                    <div class="row">
+                        <div class="col">
+                    <img src="photo_2023-12-08_05-48-36.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Jobs</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-52-11.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Animals</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-55-23.jpg" width="40">
+                    <li class="list-group-item"><a href="#">House & graden</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-58-51.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Tables & PCs</a></li>
+                </div>
+                </ul>
+
+
+                <ul class="list-group">
+                    <div class="row">
+                        <div class="col">
+                    <img src="photo_2023-12-08_05-49-43.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Businwss & services</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-52-57.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Fashion & style</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-57-43.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Hobies, recreaction</a></li>
+                </div>
+                <div class="col">
+                    <img src="photo_2023-12-08_05-58-56.jpg" width="40">
+                    <li class="list-group-item"><a href="#">Gifts</a></li>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-light text-center py-3 fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="ad_bw.png" alt="Логотип" width="70" height="70" class="d-inline-block align-top">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="">
+                                <p class="ml-4">Mobile applications</p>
+                                <p class="ml-4">Paid service</p>
+                                <p class="ml-4">Advertisting on the webside</p>
+                                <p class="ml-4">For the press</p>
+                                <p class="ml-4">Help and Feedback</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <p class="ml-4">AD'S BOARD blog</p>
+                                <p class="ml-4">Safety regulations</p>
+                                <p class="ml-4">How to sell and buy?</p>
+                                <p class="ml-4">Terms of Use</p>
+                                <p class="ml-4">Partners</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="">
+                                <p class="ml-4">Work at AD'S BOARD</p>
+                                <p class="ml-4">PopularSearches</p>
+                                <p class="ml-4">Map of Regions</p>
+                                <p class="ml-4">Advertising prefereces</p>
+                                <p class="ml-4">Site Map</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--\ Подключение Bootstrap JS (необходимо для работы некоторых компонентов) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
