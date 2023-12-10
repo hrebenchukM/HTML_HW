@@ -1,0 +1,137 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <!-- для отображения иконок подключаем шрифты
+ онлайн -->
+ <link href="https://fonts.googleapis.com/
+ icon?family=Material+Icons"
+ rel="stylesheet">
+ <!-- подключение стилевого файла фреймворка
+ Materialize -->
+ <link type="text/css"
+ rel="stylesheet"
+ href="css/materialize.min.css"
+ media="screen,projection"/>
+ <meta name="viewport"
+ content="width=device-width,
+ initial-scale=1.0">
+ <title>Document</title>
+
+
+ <style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .col img {
+        max-width: 100%;
+        height: auto; 
+    }
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Hello World</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#page1">Page 1</a></li>
+                    <li><a href="#page2">Page 2</a></li>
+                    <li><a href="#page3">Page 3</a></li>
+                    <li><a href="#page4">Page 4</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Side Navigation for Mobile -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#page1">Page 1</a></li>
+        <li><a href="#page2">Page 2</a></li>
+        <li><a href="#page3">Page 3</a></li>
+        <li><a href="#page4">Page 4</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <main>
+        <div class="row">
+            <div class="col s2">
+                <div class="card-panel">
+                    <p>Left Column Text</p>
+                </div>
+            </div>
+            <div class="col s7">
+                <div class="card-panel">
+                    <img src="https://all.accor.com/magazine/imagerie/kartinka-1-9438.jpg" alt="Image">
+                    <p>Main Content Text</p>
+                    <a href="#link1">Link 1</a>
+                    <a href="#link2">Link 2</a>
+                    <a href="#link3">Link 3</a>
+                </div>
+            </div>
+           
+    <div class="col s2 ">
+        <div class="card-panel">
+            <p>Right Column Text</p>
+        </div>
+    </div>
+        </div>
+    </main>
+
+
+    
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <h5 class="white-text">FOOTER</h5>
+                </div>
+                <div class="col s6">
+                    <ul class="right">
+                        <li><a href="#page1">Page 1</a></li>
+                        <li><a href="#page2">Page 2</a></li>
+                        <li><a href="#page3">Page 3</a></li>
+                        <li><a href="#page4">Page 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+ <!--подключение скриптового файла фреймворка
+ Materialize-->
+ <script type="text/javascript"
+ src="js/materialize.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(elems);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
