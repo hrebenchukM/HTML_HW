@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .product {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      margin: 10px;
+      border: 1px solid #cccccc;
+      box-shadow: 2px 2px 5px #999999;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+    }
+
+    .product:hover {
+      transform: rotateY(180deg);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: inline-block;
+      margin-bottom: 5px;
+      border-radius: 40px;
+      background-color: rgb(220, 35, 35);
+      color: white;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .product:hover .label {
+      background-color: darkred;
+    }
+
+    .like-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #ff0000;
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover .like-icon {
+      transform: scale(1.2);
+    }
+
+    .details-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotateY(180deg);
+      text-align: center;
+      width: 100%;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      background-color: rgba(184, 79, 79, 0.8);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .product:hover .details-wrapper {
+      opacity: 1;
+      transform: translate(-50%, -50%) rotateY(0deg);
+      z-index: 3;
+    }
+
+    .details1,
+    .details2 {
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .details2 {
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="product">
+      <div class="label">LIMITED OFFER</div>
+      <div class="like-icon">&#10084;</div>
+      <img src="https://content.rozetka.com.ua/goods/images/big/299243698.jpg" alt="Acer Aspire 7 A715-75G">
+      <div class="details-wrapper">
+        <div class="details1">
+          <h3>Product Details</h3>
+          <p>Description, specifications, etc.</p>
+        </div>
+        <div class="details2">
+          <p>Rating: 4.5 stars</p>
+          <p>Original Price: <del>35 999 ₴</del></p>
+          <p>Discounted Price: 30 999 ₴</p>
+          <p>In Stock</p>
+        </div>
+      </div>
+      <p>HoneyKey Acer Aspire 7 A715-75G</p>
+      <p>30 999 ₴</p>
+    </div>
+  </div>
+
+
+
+
+    <div class="container">
+        <div class="product">
+          <div class="label">LIMITED OFFER</div>
+          <div class="like-icon">&#10084;</div>
+
+          <img src="https://content.rozetka.com.ua/goods/images/big/112356534.jpg" alt="Lenovo IdeaPad S145"> 
+          <p>HoneyKey Lenovo IdeaPad S145</p>
+          <p>21 999 ₴</p>
+          <div class="details-wrapper">
+            <div class="details1">
+              <h3>Product Details</h3>
+              <p>Description, specifications, etc.</p>
+            </div>
+            <div class="details2">
+              <p>Rating: 4.5 stars</p>
+              <p>Original Price: <del>35 999 ₴</del></p>
+              <p>Discounted Price: 30 999 ₴</p>
+              <p>In Stock</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="product">
+          <div class="label">LIMITED OFFER</div>
+          <div class="like-icon">&#10084;</div>
+          <img src="https://content2.rozetka.com.ua/goods/images/big/381589692.jpg" alt="ASUS VivoBook 15 X512">
+          <p>HoneyKey ASUS VivoBook 15 X512</p>
+          <p>17 499 ₴</p>
+          <div class="details-wrapper">
+            <div class="details1">
+              <h3>Product Details</h3>
+              <p>Description, specifications, etc.</p>
+            </div>
+            <div class="details2">
+              <p>Rating: 4.5 stars</p>
+              <p>Original Price: <del>35 999 ₴</del></p>
+              <p>Discounted Price: 30 999 ₴</p>
+              <p>In Stock</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    
+    <div class="container">
+        <div class="product">
+          <div class="label">LIMITED OFFER</div>
+          <div class="like-icon">&#10084;</div>
+          <img src="https://content1.rozetka.com.ua/goods/images/big/207625738.jpg" alt="HP Pavilion 15-cx0003dx">
+          <p>HoneyKey HP Pavilion 15-cx0003dx</p>
+          <p>22 999 ₴</p>
+          <div class="details-wrapper">
+            <div class="details1">
+              <h3>Product Details</h3>
+              <p>Description, specifications, etc.</p>
+            </div>
+            <div class="details2">
+              <p>Rating: 4.5 stars</p>
+              <p>Original Price: <del>35 999 ₴</del></p>
+              <p>Discounted Price: 30 999 ₴</p>
+              <p>In Stock</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product">
+          <div class="label">LIMITED OFFER</div>
+          <div class="like-icon">&#10084;</div>
+          <img src="https://content.rozetka.com.ua/goods/images/big/319498601.jpg" alt="Lenovo IdeaPad S340">
+          <p>HoneyKey Lenovo IdeaPad S340</p>
+          <p>43 999 ₴</p>
+          <div class="details-wrapper">
+            <div class="details1">
+              <h3>Product Details</h3>
+              <p>Description, specifications, etc.</p>
+            </div>
+            <div class="details2">
+              <p>Rating: 4.5 stars</p>
+              <p>Original Price: <del>35 999 ₴</del></p>
+              <p>Discounted Price: 30 999 ₴</p>
+              <p>In Stock</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
