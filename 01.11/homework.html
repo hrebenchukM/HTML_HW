@@ -9,11 +9,6 @@
       padding: 0;
     }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      margin: 20px;
-    }
 
     .product {
       position: relative;
@@ -38,8 +33,6 @@
 
     .label {
       position: absolute;
-      top: 10px;
-      left: 10px;
       display: inline-block;
       margin-bottom: 5px;
       border-radius: 40px;
@@ -49,6 +42,9 @@
       padding-left: 10px;
       padding-right: 10px;
       transition: background-color 0.3s ease;
+      text-align: center;
+      padding: 5px;
+    
     }
 
     .product:hover .label {
@@ -57,8 +53,6 @@
 
     .like-icon {
       position: absolute;
-      top: 10px;
-      right: 10px;
       color: #ff0000;
       font-size: 24px;
       cursor: pointer;
@@ -91,8 +85,28 @@
       z-index: 3;
     }
 
-    .details1,
-    .details2 {
+
+    .laptop {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #cccccc;
+      margin: 10px;
+      width: 250px;
+      box-shadow: 2px 2px 5px #999999;
+    }
+
+
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .description {
+      text-align: center;
+      margin-top: 10px;
       text-align: center;
       border-radius: 5px;
       margin-bottom: 5px;
@@ -100,133 +114,79 @@
       transform: rotateY(180deg);
     }
 
-    .details2 {
-      font-size: 14px;
+    .character {
+      padding: 10px;
     }
 
+    .character ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .character ul li {
+      margin: 0 2px;
+    }
+
+    .price {
+      text-align: center;
+      color: gray;
+      margin: 10px 0 -5px 0;
+    }
+
+    .new_price {
+      font-size: 18px;
+      color: rgb(72, 183, 106);
+    }
   </style>
 </head>
 
-<body>
-  <div class="container">
-    <div class="product">
-      <div class="label">LIMITED OFFER</div>
-      <div class="like-icon">&#10084;</div>
-      <img src="https://content.rozetka.com.ua/goods/images/big/299243698.jpg" alt="Acer Aspire 7 A715-75G">
-      <div class="details-wrapper">
-        <div class="details1">
-          <h3>Product Details</h3>
-          <p>Description, specifications, etc.</p>
-        </div>
-        <div class="details2">
-          <p>Rating: 4.5 stars</p>
-          <p>Original Price: <del>35 999 ₴</del></p>
-          <p>Discounted Price: 30 999 ₴</p>
-          <p>In Stock</p>
-        </div>
+
+
+
+
+    <div class="laptop">
+      <div class="label">АКЦИЯ</div>
+     <div class="like-icon">&#10084;</div>
+       <div class="card">
+       
+        <a href="laptop.html">
+          <div class="product"> <img src="https://content.rozetka.com.ua/goods/images/big/299243698.jpg" alt="Acer Aspire 7 A715-75G">
+         
+            <div class="details-wrapper">
+                <div class="description">
+                    <p>
+                      Ноутбук Acer Aspire <br> 7 A715-76G- <br> 56U7 (NH,QN4EU.001) Charcoal
+                    </p>
+                </div>
+            </div>
+          
+        </a>
       </div>
-      <p>HoneyKey Acer Aspire 7 A715-75G</p>
-      <p>30 999 ₴</p>
+      <div class="character">
+        Ноутбук Acer Aspire 7 A715-76G- <br> 56U7 (NH,QN4EU.001) Charcoal
+        <div>
+          <ul>
+            <li>&#9733;</li>
+            <li>&#9733;</li>
+            <li>&#9733;</li>
+            <li>&#9733;</li>
+            <li>&#9733;</li>
+          </ul>
+          <span style="color: blue;">8 отзывов</span>
+        </div>
+        <p class="price"><s>37 999</s><span>&#8372;</span></p>
+        <div style="margin-bottom: -10px;">
+          <span class="new_price">30 999<span>&#8372;</span></span>
+          <img style="float: right" src="pngegg2.png" width="25px" height="25px">
+        </div>
+        <p style="color:rgb(72, 183, 106)">Готов к отправке</p>
+      </div>
     </div>
+
+  
   </div>
-
-
-
-
-    <div class="container">
-        <div class="product">
-          <div class="label">LIMITED OFFER</div>
-          <div class="like-icon">&#10084;</div>
-
-          <img src="https://content.rozetka.com.ua/goods/images/big/112356534.jpg" alt="Lenovo IdeaPad S145"> 
-          <p>HoneyKey Lenovo IdeaPad S145</p>
-          <p>21 999 ₴</p>
-          <div class="details-wrapper">
-            <div class="details1">
-              <h3>Product Details</h3>
-              <p>Description, specifications, etc.</p>
-            </div>
-            <div class="details2">
-              <p>Rating: 4.5 stars</p>
-              <p>Original Price: <del>35 999 ₴</del></p>
-              <p>Discounted Price: 30 999 ₴</p>
-              <p>In Stock</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-
-
-    <div class="container">
-        <div class="product">
-          <div class="label">LIMITED OFFER</div>
-          <div class="like-icon">&#10084;</div>
-          <img src="https://content2.rozetka.com.ua/goods/images/big/381589692.jpg" alt="ASUS VivoBook 15 X512">
-          <p>HoneyKey ASUS VivoBook 15 X512</p>
-          <p>17 499 ₴</p>
-          <div class="details-wrapper">
-            <div class="details1">
-              <h3>Product Details</h3>
-              <p>Description, specifications, etc.</p>
-            </div>
-            <div class="details2">
-              <p>Rating: 4.5 stars</p>
-              <p>Original Price: <del>35 999 ₴</del></p>
-              <p>Discounted Price: 30 999 ₴</p>
-              <p>In Stock</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-
-    
-    <div class="container">
-        <div class="product">
-          <div class="label">LIMITED OFFER</div>
-          <div class="like-icon">&#10084;</div>
-          <img src="https://content1.rozetka.com.ua/goods/images/big/207625738.jpg" alt="HP Pavilion 15-cx0003dx">
-          <p>HoneyKey HP Pavilion 15-cx0003dx</p>
-          <p>22 999 ₴</p>
-          <div class="details-wrapper">
-            <div class="details1">
-              <h3>Product Details</h3>
-              <p>Description, specifications, etc.</p>
-            </div>
-            <div class="details2">
-              <p>Rating: 4.5 stars</p>
-              <p>Original Price: <del>35 999 ₴</del></p>
-              <p>Discounted Price: 30 999 ₴</p>
-              <p>In Stock</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="product">
-          <div class="label">LIMITED OFFER</div>
-          <div class="like-icon">&#10084;</div>
-          <img src="https://content.rozetka.com.ua/goods/images/big/319498601.jpg" alt="Lenovo IdeaPad S340">
-          <p>HoneyKey Lenovo IdeaPad S340</p>
-          <p>43 999 ₴</p>
-          <div class="details-wrapper">
-            <div class="details1">
-              <h3>Product Details</h3>
-              <p>Description, specifications, etc.</p>
-            </div>
-            <div class="details2">
-              <p>Rating: 4.5 stars</p>
-              <p>Original Price: <del>35 999 ₴</del></p>
-              <p>Discounted Price: 30 999 ₴</p>
-              <p>In Stock</p>
-            </div>
-          </div>
-        </div>
-    </div>
-
-
 
 </body>
 
