@@ -1,0 +1,17 @@
+﻿body{background:#dadada;  display: flex;
+    flex-direction: column;}
+*{margin:0; padding:0}
+#menu{ display: flex;
+    flex-direction: row-reverse; padding: 1em;}
+#menu ul ul{display:none; position: absolute;
+    top: 100%;
+    width: 150px; }
+#menu  li{  display: flex;
+    flex-direction: row-reverse; list-style-type:none;}
+#menu li a{display:block; background: #4e4e4e; color: #fff; 
+text-decoration:none;   padding: 1em;}
+#menu li a:hover{display:block; background: #575757;color:orange}
+#menu ul li:hover > ul{display:block;}
+#menu ul{ display: flex;justify-content: flex-end;}
+#menu li{font-family: Arial; text-align:center; width:auto; }
+p{float:left;margin-top: 100px; padding:20px; padding: 1em;}
