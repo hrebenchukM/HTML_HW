@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+    background-color: rgb(138, 234, 234);
+    border: 1px solid
+}
+
+
+div div {
+    flex: 1 1 auto;
+    height: 200px;
+    background-color: rgb(255, 225, 0);
+    border: 2px solid
+}

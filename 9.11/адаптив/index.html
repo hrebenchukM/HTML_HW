@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+<style>
+
+
+@media screen and (orientation:landscape) {
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    div div {
+        height: 100px;
+        background-color: rgb(255, 0, 225);
+        border: 2px solid
+    }
+
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: auto;
+    background-color: rgb(138, 234, 234);
+    border: 1px solid
+}
+
+
+div div {
+    flex: 1 1 auto;
+    height: 200px;
+    background-color: rgb(255, 225, 0);
+    border: 2px solid
+}
+</style>
+</head>
+
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div>
+        <form method="get">
+            <p>
+                <label for="phone">Телефон:</label>
+                <input type="text" placeholder="+1-234-567-8901" pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone"
+                    name="phone" />
+            </p>
+            <p>
+                <input type="submit" value="Отправить" />
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

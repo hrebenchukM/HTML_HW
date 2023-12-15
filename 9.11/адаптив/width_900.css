@@ -1,0 +1,15 @@
+@media screen and (orientation:landscape) {
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    div div {
+        height: 100px;
+        background-color: rgb(255, 0, 225);
+        border: 2px solid
+    }
+
+}
