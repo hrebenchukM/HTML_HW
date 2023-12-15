@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographer Portfolio</title>
+    <style>
+        body {
+            background-color: #6a6a6a;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .name {
+            font-size: 4.5vh;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .name-profession {
+            color: #929290;
+            margin-top: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+        }
+
+        li {
+            color: white;
+            cursor: pointer;
+        }
+
+        .section-heading {
+            text-align: center;
+            color: #a8a8a7;
+            font-size: 2em;
+            margin-top: 50px;
+        }
+
+        .info-section {
+            margin-top: 10%;
+            display: flex;
+            gap: 5%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .column p {
+            margin: 2% 0;
+        }
+
+        .rows {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 10px;
+            height: 50%;
+            width: 20%;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 0;
+            justify-content: center;
+            border: 5px solid white;
+            margin: 10px;
+            transition: opacity 0.3s, background-color 0.3s;
+        }
+
+        .text-overlay {
+            display: none;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .photo:hover .text-overlay {
+            display: block;
+        }
+
+        .footer {
+            display: flex;
+            gap: 1%;
+            margin-top: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .instagram-photo,
+        .portfolio-photo {
+            width: 15%;
+            border: 5px solid white;
+            border-radius: 10px;
+            margin: 10px;
+            transition: opacity 0.3s, background-color 0.3s;
+        }
+
+        .instagram-photo:hover,
+        .portfolio-photo:hover {
+            opacity: 0.7;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="name">Julia Jacobson</div>
+        <ul>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Instagram</li>
+        </ul>
+    </header>
+
+    <div class='section-heading'>About Me </div>
+
+    <div class='info-section'>
+        <div class="column">
+            <p>My name is Julia Jacobson</p>
+            <p>A passionate photographer who enjoys capturing moments of nature, people, and travel.</p>
+            <p>If you like my photos, feel free to get in touch.</p>
+            <p>Email: photo.jacobson@gmail.com</p>
+            <p>Phone: +01(111) 333-55-77</p>
+        </div>
+
+        <div class="column">
+            <p>- 200+ happy clients</p>
+            <p>- 120 portrait shoots</p>
+            <p>- 600+ nature shoots</p>
+            <p>- 1000+ wedding shots</p>
+            <p>- 12 countries visited</p>
+            <p>- 600+ coffee </p>
+        </div>
+    </div>
+
+    <div class='section-heading'>My Portfolio </div>
+
+    <div class="rows">
+        <div class="photo portfolio-photo">
+            <img src="https://images.unsplash.com/photo-1654756451106-1b8e65da7f70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 1">
+            <div class="text-overlay">
+                <p>Stunning Landscape</p>
+            </div>
+        </div>
+
+        <div class="photo portfolio-photo">
+            <img src="https://images.unsplash.com/photo-1702180203334-62a6306fc5ce?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 2">
+            <div class="text-overlay">
+                <p>Urban Exploration</p>
+            </div>
+        </div>
+
+        <div class="photo portfolio-photo">
+            <img src="https://images.unsplash.com/photo-1511479120330-75dc151b216c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 3">
+            <div class="text-overlay">
+                <p>Capturing Moments</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="rows">
+        <div class="photo portfolio-photo">
+            <img src="https://images.unsplash.com/photo-1702044481603-f4217e587a05?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 4">
+            <div class="text-overlay">
+                <p>City Vibes</p>
+            </div>
+        </div>
+        <div class="photo portfolio-photo">
+            <img src="https://images.unsplash.com/photo-1548352599-413c8b2703d1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Photo 5">
+            <div class="text-overlay">
+                <p>Nature's Beauty</p>
+            </div>
+        </div>
+    </div>
+
+    <div class='section-heading'>Follow me on Instagram </div>
+    <div class="footer">
+        <img class="instagram-photo" src="https://images.unsplash.com/photo-1702234672110-dd24ddfd9e0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Photo 1">
+        <img class="instagram-photo" src="https://images.unsplash.com/photo-1702294186146-ae05ba6e5d02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Photo 2">
+        <img class="instagram-photo" src="https://images.unsplash.com/photo-1702353214864-fcf6a60e9e2b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Photo 3">
+        <img class="instagram-photo" src="https://images.unsplash.com/photo-1702459444073-f0959a2cbd92?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Photo 4">
+        <img class="instagram-photo" src="https://images.unsplash.com/photo-1701743803817-df3f966494a4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Photo 5">
+        <img class="instagram-photo" src="https://images.unsplash.com/photo-1702318429205-c13c15278ea3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram Photo 6">
+    </div>
+
+</body>
+
+</html>
