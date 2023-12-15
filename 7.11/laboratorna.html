@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Account Creation</title>
+    <style>
+       body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h1 {
+    color: #232f3e;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    border: 1px solid #d5d9dc;
+    border-radius: 3px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+input[type="submit"] {
+    background-color: #ff9900;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.links {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <img src="https://ru.bitcoinwiki.org/upload/ru/images/d/db/Amazon.png" alt="amazon" width="100px" height="100px">
+        <h1>Create account</h1>
+        <input type="text" placeholder="Your name" required>
+        <input type="text" placeholder="Mobile number or email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Re-enter password" required>
+        <div class="checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</label>
+        </div>
+        <input type="submit" value="Continue">
+    </form>
+    <div class="links">
+        <label for="terms">Buying for work?</label>
+        <a href="#">Create a free business account</a>
+        <label for="terms">Already have an account? </label><a href="#">Sign in</a>
+        <p><a href="#">Conditions of of Use</a> | <a href="#">Privacy Notice</a>|<a href="#"> Help</a></p>
+        <p>© 1996-2020, Amazon.com, Inc. or its affiliates</p>
+    </div>
+</body>
+
+</html>
