@@ -1,0 +1,39 @@
+@header-footer-bg:rgb(32, 16, 110);
+@mybag: @header-footer-bg+100;
+@sidebar-main-bg:#89e9ff;
+@photo-description-bg:  #d1f6ff;
+
+header, footer {
+  height: 50px;
+  background-color: @header-footer-bg;
+}
+
+.sidebar {
+  width: 20%;
+  height: calc(100vh - 100px);
+  float: left;
+  background-color: @sidebar-main-bg;
+}
+
+main {
+  width: 80%;
+  height: calc(100vh - 100px);
+  float: left;
+  
+   .photo, .description {
+     width:50%;
+     height:auto; 
+     float:left; 
+     background-color:@photo-description-bg; 
+   }
+}
+
+footer {
+ clear:both; 
+}
+
+  p {
+    background-color: @mybag;
+  }
+  
+

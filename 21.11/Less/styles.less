@@ -1,0 +1,33 @@
+@mydiv: rgb(32, 16, 110);
+@mybag: @mydiv+100;
+@mybagl: @mybag+50;
+
+@prop: border;
+
+
+/*переменная — имя селектора*/
+@selector-class: border;
+@selector-id: center;
+
+.@{selector-class} {
+  // .border
+  border: 5px dotted @mydiv;
+}
+
+#@{selector-id} {
+  // #center
+  padding: 10px;
+}
+
+div {
+  background-color: @mydiv;
+}
+
+p {
+  background-color: @mybag;
+}
+
+.mybag {
+  background-color: @mybagl;
+  @{prop}: 2px solid; // border: 2px solid;
+}
