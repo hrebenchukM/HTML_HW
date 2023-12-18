@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+</head>
+<body>
+  <!-- для фиксирования навигации по верхнему краю создадим блочный контейнер с классом navbar-fixed -->
+  <div class="navbar-fixed">
+    <nav class="indigo lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Materialize</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!-- для создания мобильного меню создадим список с классом sidenav -->
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+  </div>
+  <section class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m7 l8">
+            <!-- используем Card Reveal -->
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/blog-1.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator indigo-text">Autem debitis<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title indigo-text ">Autem debitis<i class="material-icons right">close</i></span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aspernatur dignissimos dolorem nemo quia alias molestias quibusdam ex. Autem debitis rem illum nesciunt placeat asperiores omnis, accusamus harum deserunt dolorum?</p>
+                  <p><a class="pink-text" href="#">More...</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/blog-2.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator indigo-text">Repellendus<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title indigo-text ">Repellendus<i class="material-icons right">close</i></span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, deleniti! Hic alias nulla dignissimos neque necessitatibus quos incidunt ullam. Modi praesentium animi similique officiis alias corporis deserunt, amet blanditiis. Cumque.</p>
+                  <p><a class="pink-text" href="#">More...</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="images/blog-3.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator indigo-text">Hic alias<i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title indigo-text ">Hic alias<i class="material-icons right">close</i></span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam voluptatum facilis explicabo eaque? Sapiente quam ab repellat, eveniet quia saepe, dignissimos non nostrum quidem cumque vero distinctio sint soluta!</p>
+                  <p><a class="pink-text" href="#">More...</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m5 l4">
+            <ul class="collection with-header">
+                <li class="collection-header indigo-text"><h5>Recent Posts</h5></h6></li>
+                <li class="collection-item"><a class="pink-text" href="#">Autem debitis</a></li>
+                <li class="collection-item"><a class="pink-text" href="#">Repellendus</a></li>
+                <li class="collection-item"><a class="pink-text" href="#">Hic alias</a></li>
+            </ul>
+            <ul class="collection with-header">
+                <li class="collection-header indigo-text"><h5>Recent Comments</h5></li>
+                <li class="collection-item avatar">
+                  <img src="images/avatar-1.png" alt="" class="circle">
+                  <span class="title">Bob</span>
+                  <p>Sapiente quam ab repellat, eveniet quia saepe.</p>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/avatar-2.png" alt="" class="circle">
+                    <span class="title">Natali</span>
+                    <p>Magnam aperiam voluptatum facilis.</p>
+                </li>
+                <li class="collection-item avatar">
+                    <img src="images/avatar-3.png" alt="" class="circle">
+                    <span class="title">Gretta</span>
+                    <p>Modi praesentium animi similique alias nulla.</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+  <footer class="page-footer indigo">
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+            <h5 class="white-text">Menu</h5>
+          <ul>
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li class="active"><a class="white-text" href="#">Blog</a></li>
+            <li><a class="white-text" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col s6 l3 offset-l3">
+            <h5 class="white-text">Social</h5>
+            <ul>
+              <li><a class="white-text" href="https://www.facebook.com/">Facebook</a></li>
+              <li><a class="white-text" href="https://twitter.com/">Twitter</a></li>
+              <li><a class="white-text" href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with Materialize
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/materialize.min.js"></script>
+  <script>
+    /*дожидаемся загрузки страницы*/
+    document.addEventListener('DOMContentLoaded', function() {
+        /*переменная для элемента с классом sidenav*/
+        var elems = document.querySelectorAll('.sidenav');
+        /*инициализируем плагин Sidenav для мобильного меню*/
+        var instances = M.Sidenav.init(elems);
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+  </script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.scrollspy');
+        //настройки опций для скролла
+        var options = {
+            throttle:500,
+            scrollOffset:5,
+            activeClass:'active',
+            getActiveElement: function(id) {
+                return 'a[href="#' + id + '"]';
+            }
+        }
+        var instances = M.ScrollSpy.init(elems,options);
+    });
+  </script> -->
+</body>
+</html>
